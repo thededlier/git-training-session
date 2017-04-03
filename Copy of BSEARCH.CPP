@@ -1,9 +1,11 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
-void main()
+#include<stdio.h>
+using namespace std;
+int main()
 {
-    clrscr();
     int a[100],n,i,beg,end,mid,item;
+    char ans='Y';
 
     cout<<"\n------------ BINARY SEARCH ------------ \n\n";
     cout<<"Enter No. of Elements= ";
@@ -14,7 +16,7 @@ void main()
     {
 	cin>>a[i];
     }
-
+    while(ans=='Y'||ans=='y'){
     cout<<"\nEnter Item you want to Search= ";
     cin>>item;
 
@@ -40,6 +42,8 @@ void main()
     else
     {
 	cout<<"Data is Not Found";
+    }cout<<"Do you want to search more";	//asks the user if he wants to search more
+    cin>>ans;
     }
-  getch();
+ return 0;
 }
