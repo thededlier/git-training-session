@@ -4,15 +4,22 @@ class base
  {private:
   int a;
   int b;
-  }s;
+  };
  class derived:public base
  {
   private:
+
+
+
+
   int p;
   int q;
  }s1;
  void main()
 {clrscr();
+
+   base s;
+
 cout<<"size of base class"<<sizeof(s);
 cout<<"\n";
 cout<<"size of derived class";
